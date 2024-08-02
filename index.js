@@ -10,7 +10,6 @@ main()
 }).catch((err) => console.log(err));
 
 
-main().catch(err => console.log(err));
 
 async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/test');
@@ -52,9 +51,9 @@ const User = mongoose.model("User",userSchema);
 // ]).then((res)=>{
 //     console.log(res);
 // })
-User.findOneAndUpdate({name:"Gungun"},{email:55}).then((res)=>{
-    console.log(res);
-}).catch((err)=>{
-    console.log(err);
-});
+// User.findOneAndUpdate({name:"Gungun"},{email:55}).then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// });
 
