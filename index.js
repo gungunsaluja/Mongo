@@ -52,8 +52,9 @@ const User = mongoose.model("User",userSchema);
 // ]).then((res)=>{
 //     console.log(res);
 // })
-User.updateOne({name:"Adam"},{age:49}).then((res)=>{
+User.findOneAndUpdate({name:"Gungun"},{email:55}).then((res)=>{
     console.log(res);
 }).catch((err)=>{
     console.log(err);
 });
+
